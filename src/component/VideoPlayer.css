@@ -1,0 +1,37 @@
+/* Container for the video player */
+.video-container {
+    display: flex;                   /* Use flexbox for centering */
+    justify-content: center;         /* Center horizontally */
+    align-items: center;             /* Center vertically */
+    height: 100vh;                  /* Full viewport height */
+    overflow: hidden;                /* Hide overflow */
+    background-color: #000;         /* Optional: background color */
+}
+
+/* Video element styles */
+.video-player {
+    width: 100%;                    /* Full width */
+    height: auto;                   /* Maintain aspect ratio */
+    max-height: 100%;               /* Prevent overflow vertically */
+    object-fit: cover;              /* Cover the container while maintaining aspect ratio */
+    border-radius: 8px;             /* Optional: rounded corners */
+}
+
+/* Media queries for further adjustments */
+@media (max-width: 1200px) {
+    .video-player {
+        max-height: 80%;             /* Adjust maximum height on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-player {
+        max-height: 70%;             /* Further reduce height on mobile devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .video-player {
+        max-height: 60%;             /* Further adjustments for very small screens */
+    }
+}

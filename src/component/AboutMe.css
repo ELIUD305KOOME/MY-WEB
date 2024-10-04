@@ -1,0 +1,227 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me, .education, .skills, .get-in-touch {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    color: #6c1fe8;
+    background-color: #7df399;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about-me-container {
+        padding: 10px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, textarea {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+/* skills */
+
+/* Pseudo-element for the vertical line */
+.skills {
+    background-color: transparent;
+}
+
+.skill-category {
+    margin-left: 600px;
+    margin-top: -160px;
+    margin-bottom: 200px;
+}
+
+.skill-category h5 {
+    margin-top: 0px;
+    color: #3515ed;
+}
+
+.skillnames {
+    margin-top: 150px;
+    margin-left: 250px;
+    color: #000;
+    font-size: 70px;
+    text-shadow: #555 15px 5px 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .skill-category {
+        margin-left: 400px; 
+    }
+}
+
+@media (max-width: 900px) {
+    .skill-category {
+        margin-left: 20px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .skills{
+        height: 450px;
+    }
+    .skill-category {
+        margin-left: 150px;
+        margin-top: -165px; 
+    }
+
+    .skillnames {
+        margin-left: 20px; 
+        font-size: 40px; 
+        margin-top: 100px;
+    }
+
+    h5 {
+        font-size: 15px; 
+    }
+    li{
+        font-size: 10px; 
+    }
+    .card{
+        width: 80%;
+        height: auto;
+    }
+    
+    .col-md-4{
+        width: 100%;
+    }
+}
+
+
+/* Icon color styles */
+.skill-category li:nth-child(1) i { color: #3776AB; } /* Python */
+.skill-category li:nth-child(2) i { color: #2C3E50; } /* Flask */
+.skill-category li:nth-child(3) i { color: #003DA5; } /* SQL */
+.skill-category li:nth-child(4) i { color: #00618A; } /* MySQL */
+.skill-category li:nth-child(5) i { color: #E34F26; } /* HTML5 */
+.skill-category li:nth-child(6) i { color: #1572B6; } /* CSS */
+.skill-category li:nth-child(7) i { color: #61DAFB; } /* React */
+.skill-category li:nth-child(8) i { color: #F7DF1E; } /* JavaScript */
+.skill-category li:nth-child(9) i { color: #F05032; } /* Git */
+.skill-category li:nth-child(10) i { color: #28A745; } /* Git Collaboration */
+.skill-category li:nth-child(11) i { color: #003DA5; } /* Database Management */
+.skill-category li:nth-child(12) i { color: #28A745; } /* Insurance Verification */
+.skill-category li:nth-child(13) i { color: #007BFF; } /* Claim Creation */
+.skill-category li:nth-child(14) i { color: #007BFF; } /* Charge Entry */
+.skill-category li:nth-child(15) i { color: #28A745; } /* Eligibility Checks */
+.skill-category li:nth-child(16) i { color: #FFD700; } /* Payment Posting */
+
+/* Optional: Change icon color on hover */
+/* .skill-category li:hover i {
+    filter: brightness(1.2); /* Lighten icon color on hover */
+
+
+/* Optional: Add animation to the icons */
+.name{
+    color: #1572B6;
+    background-color: #eef2f7;
+    border-radius: 5px;
+}
+.lvas{
+    color: #f803e4;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+}
+
+.about-me{
+    background-color: #e4e0c0;
+}
+
+.education .school-logo {
+    width: 30px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+.school{
+    color: gold;
+}
+.biller{
+    color: #3515ed;
+    font-weight: 200px;
+}
+.biller i {
+    font-weight: bolder;
+}

@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  .navbar-brand {
+    display: flex; /* Align logo vertically */
+    align-items: center; /* Center logo vertically */
+    transition: transform 0.3s;
+    margin-left: 15px;
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  .navbar-brand:hover img {
+    transform: scale(1.1); /* Scale logo slightly on hover */
+  }
+  
+  .nav-link {
+    color: #343a40; /* Dark link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  .offcanvas-header {
+    background-color: #007bff; /* Offcanvas header background color */
+    color: white; /* Offcanvas header text color */
+  }
+  
+  .offcanvas-body {
+    background-color: #eae6e6; /* Offcanvas body background color */
+  }
+  
+  .offcanvas-title {
+    font-size: 1.5rem; /* Font size for the offcanvas title */
+  }
+  

@@ -1,0 +1,328 @@
+.horizontal-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.big-div {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.small-div {
+    flex: 1;
+    margin: 10px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .big-div {
+        flex-direction: row;
+    }
+
+    .small-div {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .small-div {
+        height: 200px;
+    }
+}
+
+
+.small-div-two {
+    flex-direction: column; /* Stack images vertically */
+}
+
+.small-div-two img {
+    margin: 5px 0; /* Add margin between images */
+    width: 100%; /* Make images take the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Optional: Set a maximum height for larger screens */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+.small-div-two {
+    flex-direction: column; /* Stack images vertically */
+}
+
+.small-div-two img {
+    margin: 5px 0; /* Add margin between images */
+}
+
+@media (max-width: 768px) {
+    .small-div-one img, .small-div-two img {
+        max-height: 200px; /* Adjust maximum height for medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .small-div-one img, .small-div-two img {
+        max-height: 150px; /* Adjust maximum height for small screens */
+    }
+}
+
+/*cards */
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    font-weight: 600; /* Slightly bolder for emphasis */
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem; /* Increased padding for a more substantial feel */
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem; /* Softer border-radius for a smoother look */
+    transition: all 0.3s ease-in-out; /* Smoother and longer transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff; /* Adjusted to a more vibrant blue */
+    border-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Soft box shadow */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #004085;
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4); /* Deepened shadow on hover */
+  }
+  
+  /* Badge styles */
+  .badge {
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545;
+  }
+  
+  .badge.bg-danger:hover {
+    background-color: #bd2130; /* Slightly darker on hover */
+  }
+  
+  /* Positioning styles */
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .start-100 {
+    left: 100%;
+  }
+  
+  .translate-middle {
+    transform: translate(-50%, -50%);
+  }
+  
+  .rounded-pill {
+    border-radius: 50rem;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* Card styles */
+  .card {
+    width: 250px; /* Slightly wider for a modern look */
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Elevated shadow for a luxurious feel */
+    transition: box-shadow 0.3s ease-in-out;
+    float: left;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 100%; /* Taller image for better visuals */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05); /* Zoom effect on image hover */
+  }
+  
+  .card-body {
+    padding: 20px; /* Increased padding for a spacious feel */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+    color: #333; /* Darker text for readability */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666; /* Lighter color for supporting text */
+  }
+  
+
+  /* Responsive styles */
+
+  .horizontal-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: -webkit-radial-gradient();
+}
+
+.big-div {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.small-div {
+    flex: 1;
+    margin: 10px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    height: 400px;
+}
+
+.small-div-two {
+    display: flex; /* Ensure cards are in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center cards */
+}
+
+.card {
+    flex: 1 1 250px; /* Allow cards to grow and shrink, with a base width of 250px */
+    margin: 10px; /* Margin for spacing */
+    max-width: 300px; /* Optional: limit maximum width */
+    border: 1px solid #150175;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .small-div {
+        height: 300px;
+    }
+
+    .card {
+        flex: 1 1 200px; /* Shrink to a smaller base width on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .small-div {
+        height: 200px;
+    }
+
+    .card {
+        flex: 1 1 150px; /* Shrink further on small screens */
+    }
+}
+
+.card{
+  width: 100%;
+}
+
+.horizontal-section {
+  display: flex; /* Enables flexbox for layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 20px; /* Adds some padding */
+  background-size: cover; /* Ensures background covers the section */
+  background-position: center; /* Centers the background image */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevents overflow */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .horizontal-section {
+      height: 80vh; /* Adjust height for medium screens */
+  }
+  .heading{
+    font-size: 30000px; /* Increase font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .horizontal-section {
+      height: 60vh; /* Adjust height for smaller screens */
+      padding: 15px; /* Less padding on smaller screens */
+  }
+  .heading{
+    font-size: 2000px; /* Decrease font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-section {
+      height: 30vh; /* Further adjust height */
+      padding: 10px; /* Even less padding */
+  }
+}
+.heading{
+  color: #67fa05;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
