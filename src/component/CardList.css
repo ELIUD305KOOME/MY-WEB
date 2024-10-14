@@ -1,0 +1,91 @@
+.card-container {
+    display: flex; /* Use flexbox to layout cards horizontally */
+    overflow: hidden; /* Hide overflow to prevent extra space */
+    width: 100%; /* Full width of the parent */
+    position: relative; /* Relative positioning for absolute child elements */
+    animation: slide 20s linear infinite; /* Continuous slide animation */
+}
+
+
+.card {
+    min-width: 300px; /* Set a minimum width for cards */
+    margin: 0 10px; /* Space between cards */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Hide overflow for image */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.card img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+@media (max-width: 576px) {
+    .card-container {
+        display: flex; /* Use flexbox to layout cards horizontally */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100%; /* Full width of the parent */
+        position: relative; /* Relative positioning for absolute child elements */
+        animation: slide-in 0.5s ease forwards; /* Slide-in animation */
+        scrollbar-width: thin; /* Style for Firefox */
+    }
+    
+    /* Slide-in animation */
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100%); /* Start from right */
+            opacity: 0; /* Start hidden */
+        }
+        100% {
+            transform: translateX(0); /* End at original position */
+            opacity: 1; /* Fully visible */
+        }
+    }
+    
+    /* For Webkit browsers (Chrome, Safari) */
+    .card-container::-webkit-scrollbar {
+        height: 8px; /* Height of the scrollbar */
+    }
+    
+    .card-container::-webkit-scrollbar-thumb {
+        background-color: #04fd7c; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Round the corners of the scrollbar thumb */
+    }
+    
+    .card-container::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1); /* Background of the scrollbar track */
+    }
+    
+    .card {
+        min-width: 300px; /* Set a minimum width for cards */
+        margin: 0 10px; /* Space between cards */
+        border: 1px solid #04fd7c; /* Optional border */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        overflow: hidden; /* Hide overflow for image */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow on hover */
+        background-color: bisque;
+    }
+    
+    /* Image styling */
+    .card img {
+        width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+        border-bottom-left-radius: 20px; /* Outward (convex) */
+        border-bottom-right-radius: 50px 0; /* Inward (concave) */
+    }
+    
+    /* Hover effect for cards */
+    .card:hover {
+        transform: translateY(-5px); /* Slide up slightly */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+    
+    
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Offcanvas, Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Nav.css';
 
 const OffcanvasNavbar = () => {
@@ -27,10 +26,10 @@ const OffcanvasNavbar = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link as={Link} to="/" onClick={handleClose}>Home</Nav.Link>
-            <Nav.Link as={Link} to="/about" onClick={handleClose}>About</Nav.Link>
-            <Nav.Link as={Link} to="/services" onClick={handleClose}>Services</Nav.Link>
-            <Nav.Link as={Link} to="/contact" onClick={handleClose}>Contact</Nav.Link>
+            <Nav.Link href="#home" onClick={handleClose}>Home</Nav.Link>
+            <Nav.Link href="#about" onClick={handleClose}>About</Nav.Link>
+            <Nav.Link href="#services" onClick={handleClose}>Services</Nav.Link>
+            <Nav.Link href="#contact" onClick={handleClose}>Contact</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>

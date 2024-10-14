@@ -6,9 +6,29 @@ import VideoPlayer from './VideoPlayer';
 const HorizontalDivs = () => {
     
   return (
-    <section className="horizontal-section"style={{ backgroundImage: `url('https://www.open.edu.au/-/media/blog/2022/05-may/computer-science-vs-software-engineering.jpg?h=536&iar=0&w=715&rev=f73ec0e28548423bbb4e5db96519d7da&extension=webp&hash=3C2660EF3B9250ADDA7D1DFD9062C75C')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%' }}>
-    <h1 className='heading'>Sofware-Engineer & Medical-Biller</h1>
-      
+    <section className="horizontal-section">
+    <h1 className='heading'>Sofware_Engineer <br></br>& <br></br>Medical_biller </h1>
+    <div className='links-rich'>
+    <a href="./Resume(1).pdf" download className="download-link">
+        Resume  <i class="bi bi-download"></i>
+    </a>
+    <br></br>
+    <a href="https://www.linkedin.com/in/koome-eliud-b19bb52b5/"  className="down">
+     <i class="bi bi-linkedin"></i>
+    </a>
+    <br></br>
+    <a href="https://github.com/ELIUD305KOOME" className="down">
+    <i class="bi bi-github"></i>
+    </a>
+    <br></br>
+    <a href="https://www.instagram.com/cycyl32/"  className="down">
+    <i class="bi bi-instagram"></i>
+    </a>
+    <br></br>
+    <a href="https://web.whatsapp.com/"  className="down">
+    <i class="bi bi-whatsapp"></i>
+    </a>
+    </div>
 
 
     </section>

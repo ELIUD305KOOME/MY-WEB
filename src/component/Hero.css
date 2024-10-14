@@ -213,9 +213,11 @@
   .horizontal-section {
     display: flex;
     justify-content: center;
+    align-items: center; /* Centers items vertically */
     padding: 20px;
-    background-image: -webkit-radial-gradient();
-}
+    background-color: black;
+  }
+
 
 .big-div {
     display: flex;
@@ -292,6 +294,7 @@
   width: 100%; /* Full width */
   height: 100vh; /* Full height of the viewport */
   overflow: hidden; /* Prevents overflow */
+
 }
 
 /* Responsive styles */
@@ -310,19 +313,80 @@
       padding: 15px; /* Less padding on smaller screens */
   }
   .heading{
-    font-size: 2000px; /* Decrease font size */
+    font-size: 20px; /* Decrease font size */
+  }
+  h1{
+    font-size: 20px; /* Decrease font size */
   }
 }
 
 @media (max-width: 480px) {
   .horizontal-section {
-      height: 30vh; /* Further adjust height */
-      padding: 10px; /* Even less padding */
+    height: 30vh;
+   
+    padding: 10px;
+    
+  }
+  .download-link{
+    font-size: 10px; /* Decrease font size */
+    
+  }
+
+  .heading {
+    font-size: 2px;
+    font-weight: bold; /* Bold text */
+    
   }
 }
-.heading{
-  color: #67fa05;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
+/* Style for the heading text */
+.heading {
+  color: #ffcccc; /* Soft pink base color */
+  text-align: center; /* Centers the text */
+  font-size: 25px; /* Font size */
+  /* flex: 1 1 200px; */
+  font-weight: bold; /* Bold text */
+  text-shadow: 
+    0 0 5px #e605f7, /* Light pink glow */
+    0 0 10px #ff3333, /* Stronger pink glow */
+    0 0 15px #cc0000, /* Rich red glow */
+    0 0 20px #990000, /* Deeper red glow */
+    0 0 30px #660000; /* Darker red shadow */
+  transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: -70px;
+}
+
+
+
+
+/* Optional: Hover effect to enhance the glow */
+/* .heading:hover {
+  text-shadow: 
+    0 0 10px #00ff00, 
+    0 0 20px #00ff00, 
+    0 0 30px #00ff00, 
+    0 0 40px #00cc00, 
+    0 0 50px #00cc00; 
+} */
+
+
+.download-link {
+  display: inline-block; /* Allows padding and margin */
+  margin-top: 20px; /* Spacing from the heading */
+  padding: 10px 20px; /* Padding for button effect */
+  background-color: #0f0e0e; /* Background color */
+  color: #f9f6f6; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 45px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+  border: #00ff26 solid 2px;
+  margin-top: -57px;
+  margin-left: 40px;
+}
+
+.download-link:hover {
+  background-color: #210202; /* Change color on hover */
+}
+.down{
+  margin-left: 70px;
+  font-size: 20px;
 }
